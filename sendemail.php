@@ -9,7 +9,7 @@
     $to             = 'Niallbethell@outlook.com'; //put your email here
     $email_template = 'simple.html';  // will find it on email-templates/ directory
 
-    $subject    = "SUBJECT";
+    $subject    = strip_tags($_POST['subject'] ?? 'Website enquiry');
     $email      = strip_tags($_POST['email']);
     $name       = strip_tags($_POST['name']);
     $message    = nl2br( htmlspecialchars($_POST['message'], ENT_QUOTES) );
