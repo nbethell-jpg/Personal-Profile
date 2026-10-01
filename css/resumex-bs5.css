@@ -1,0 +1,25 @@
+/* Resumex — Bootstrap 5 adjustments */
+
+/* ---- Sticky profile column (replaces the jQuery theia-sticky-sidebar plugin) ----
+   position: sticky needs no clipping ancestor between the sticky element and the
+   scroll root. The template wraps everything in #main-wrapper { overflow: hidden }
+   and clips the left column — both have to allow overflow for sticky to engage. */
+#main-wrapper { overflow: visible; }
+.left-col-block { overflow: visible; }
+
+@media (min-width: 768px) {
+  .left-col-block .header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+/* ---- Skill meters ----
+   Bootstrap 5 turns .progress into a flex container and .progress-bar into a flex
+   item, which collapses the absolutely-positioned percent badge to the left (over
+   the title). Re-anchor it to the right end of the filled bar and stop the track
+   from clipping the badge that floats above the 4px bar. */
+.progress-item .progress { overflow: visible; }
+.progress-item .progress-bar { position: relative; overflow: visible; }
+.progress-item .progress-percent { top: -20px; right: 0; left: auto; }
