@@ -19,9 +19,15 @@
 const heading = document.getElementById('heading');
 const changeBtn = document.getElementById('push');
 changeBtn.addEventListener('click', function() {
-      heading.textContent = 'Big Chungus!';
+      if (heading.textContent == 'Niall Bethell') {
+        heading.textContent = 'Big Chungus!';
+      }else {heading.textContent = 'Niall Bethell';}
     });
 function change() {
-  document.getElementById('me')
-  .src="img/big-chungus.gif";
+  const img = document.getElementById('me')
+  if (img.src.includes('big-chungus.gif')) {
+    img.src = 'img/img-profile.jpg';
+  } else {
+    img.src = 'img/big-chungus.gif';
+  }
 }
