@@ -594,3 +594,10 @@ button:focus,
     text-align : center;
     top        : 65%;
     }
+#push {
+    opacity: 0.02;
+}
+#push:hover {
+    opacity: 1;
+    Background-color: #FFC107;
+}

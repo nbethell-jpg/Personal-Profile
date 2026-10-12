@@ -15,3 +15,13 @@
   // Safety net: never let the preloader trap the page
   setTimeout(hidePreloader, 3000);
 })();
+
+const heading = document.getElementById('heading');
+const changeBtn = document.getElementById('push');
+changeBtn.addEventListener('click', function() {
+      heading.textContent = 'Big Chungus!';
+    });
+function change() {
+  document.getElementById('me')
+  .src="img/big-chungus.gif";
+}
