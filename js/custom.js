@@ -31,4 +31,6 @@ function change() {
     img.src = 'img/big-chungus.gif';
   }
 }
-document.getElementById("formStartedAt").value = Date.now();
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("formStartedAt").value = Date.now();
+});
