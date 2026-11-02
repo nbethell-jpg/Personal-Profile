@@ -31,3 +31,4 @@ function change() {
     img.src = 'img/big-chungus.gif';
   }
 }
+document.getElementById("formStartedAt").value = Date.now();

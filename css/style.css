@@ -601,3 +601,7 @@ button:focus,
     opacity: 1;
     Background-color: #FFC107;
 }
+.honeypot {
+    position: absolute;
+    left: -9999px;
+}
